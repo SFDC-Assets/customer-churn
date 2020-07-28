@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_List</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>First_Purchase__c</columns>
+    <columns>Last_Activity_Date__c</columns>
+    <columns>Joined_Group_Rides__c</columns>
+    <columns>Velostars_Member__c</columns>
+    <columns>Total_Spent__c</columns>
+    <columns>Active_End_Year_1__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active_End_Year_1__c</field>
+        <operation>equals</operation>
+        <value>Unknown</value>
+    </filters>
+    <label>New Customers</label>
+</ListView>

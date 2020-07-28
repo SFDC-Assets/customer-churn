@@ -1,0 +1,25 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader" controller="DateShifter">
+	
+    
+        
+    <div class="slds-align--absolute-center">
+        <lightning:card variant="Narrow" title="Shift Dates" iconName="standard:contact">
+            <lightning:layout verticalAlign="stretch" multipleRows="true">
+                <lightning:layoutItem  size="12" padding="around-small">
+            		<p>Do this ONCE before you start building your predictions!</p>
+                </lightning:layoutItem>
+                <lightning:layoutItem  size="12" padding="around-small">
+            		<lightning:button aura:id="shiftbuttonid" variant="brand" label="Shift Dates"  onclick="{!c.shiftDates}"/>            
+                </lightning:layoutItem>
+                <lightning:layoutItem  size="12" padding="around-small">
+            		<p>This might take 1-2 minutes. Please Wait</p>
+                </lightning:layoutItem>
+                
+            </lightning:layout>
+        </lightning:card>
+
+    </div>
+    <div class="exampleHolder">
+        <lightning:spinner class="slds-hide" aura:id="mySpinner" alternativeText="Shifting Dates. Please Wait" />
+    </div>
+</aura:component>
