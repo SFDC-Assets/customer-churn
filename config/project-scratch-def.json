@@ -1,7 +1,6 @@
 {
   "orgName": "Velo Mateo Bike Shop",
   "edition": "Developer",
-  "release" : "Previous",
   "features": ["EinsteinAnalyticsPlus","EinsteinBuilder","AnalyticsAdminPerms","EinsteinBuilderFree"],
   "settings": {
     "lightningExperienceSettings": {
