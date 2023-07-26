@@ -1,6 +1,6 @@
-sfdx force:org:create -f config/project-scratch-def.json -d 30 -s -w 3
+sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix customer -o churn.workshop
 sfdx force:source:push
-sfdx force:user:password:generate
+sfdx shane:user:password:set -g User -l User -p salesforce1
 sfdx shane:data:dates:update -r 7-14-2020
 sfdx force:data:bulk:upsert -s Contact -f data-modified/velostar-contacts.csv -i External_Id__c
 sfdx force:data:bulk:upsert -s Contact -f data-modified/velostar-new-customers.csv -i External_Id__c
